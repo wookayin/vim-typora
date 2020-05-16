@@ -1,4 +1,5 @@
-if has('mac')
+let uname = system('uname -s')
+if stridx(uname,"Darwin") != -1
 
   function! typora#launch()
       " Launch Typora
