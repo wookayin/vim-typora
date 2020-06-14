@@ -10,7 +10,7 @@ Usage
 :Typora
 ```
 
-to open the current file in Typora (macOS or UNIX only).
+to open the current file in Typora.
 
 Vim buffers and Typora windows will synchronize upon every save.
 
