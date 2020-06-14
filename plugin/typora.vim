@@ -8,4 +8,14 @@ if has('mac')
 
   command! Typora call typora#launch()
 
+elseif has('unix')
+
+  function! typora#launch()
+    " Launch Typora
+    call system("typora \"" . expand("%") . "\"")
+    setlocal autoread
+  endfunction
+  
+  command! Typora call typora#launch()
+
 endif
